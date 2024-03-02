@@ -1,0 +1,61 @@
+:root {
+    --white: #fff;
+  }
+  
+  body {
+    background-image: url(../starter-code/assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 1440px;
+    height: 900px;
+  }
+  header hr {
+    width: 80%;
+    opacity: 25%;
+    margin: 5% 0 0 -2%;
+    color: var(--white);
+    position: relative;
+  }
+  nav {
+    width: 100vw;
+    height: 16vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+  .logo {
+    width: 40vw;
+    height: 15vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    margin: 5% 5% 0 5%;
+  }
+  .menu {
+    fill: transparent var(--white) 4%;
+    height: 15vh;
+    width: 60vw;
+    backdrop-filter: blur(30px);
+    filter: saturation(25%);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+  }
+  .menu a {
+    margin: 0 5%;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 9px;
+    transition: 0.5s;
+  }
+  .menu a:hover {
+    border-bottom: 3px solid var(--white);
+  }
