@@ -105,3 +105,41 @@ span {
 #active {
   color: var(--white);
 }
+h2 {
+  color: var(--white);
+  margin: 10px;
+  font-size: 120px;
+}
+p{
+  font-size: 22px;
+  display: inline;
+  color: var(--white);
+}
+h3{
+  color: grey;
+}
+h4{
+  margin-top: 2px;
+  font-size: 22px;
+  display: inline;
+  color: var(--white);
+}
+hr{
+  margin-top: 40px;
+  color: grey;
+}
+#DistanceTimeTravel{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.top-info{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.bottom-info{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
