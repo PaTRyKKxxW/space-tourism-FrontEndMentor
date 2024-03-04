@@ -10,6 +10,9 @@ body {
   width: 1440px;
   height: 900px;
 }
+header {
+  position: absolute;
+}
 header hr {
   width: 80%;
   opacity: 25%;
@@ -25,6 +28,7 @@ nav {
   position: relative;
 }
 main {
+  height: 100vh;
   display: flex;
   flex-direction: row;
 }
@@ -60,9 +64,10 @@ main {
   border-bottom: 3px solid var(--white);
 }
 .left {
-  height: 84vw;
+  height: 100%;
   width: 50vw;
-  padding: 10% 0 10% 10%;
+  padding: 20% 0 10% 10%;
+  box-sizing: border-box;
 }
 .left span {
   font-size: 50px;
@@ -80,7 +85,7 @@ main {
   font-size: 22px;
 }
 .right {
-  height: 84vw;
+  height: 100%;
   width: 50vw;
   display: flex;
   justify-content: center;
@@ -107,7 +112,7 @@ main {
     width: 375px;
     height: 667px;
   }
-  hr{
+  hr {
     display: none;
   }
   nav {
