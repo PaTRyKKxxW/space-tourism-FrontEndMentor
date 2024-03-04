@@ -1,5 +1,6 @@
 :root {
   --white: #fff;
+  --grey: grey;
 }
 
 body {
@@ -99,7 +100,7 @@ span {
 .info a {
   font-size: 20px;
   text-decoration: none;
-  color: grey;
+  color: var(--grey);
   margin-left: 10px;
 }
 #active {
@@ -116,7 +117,7 @@ p{
   color: var(--white);
 }
 h3{
-  color: grey;
+  color: var(--grey);
 }
 h4{
   margin-top: 2px;
@@ -126,7 +127,7 @@ h4{
 }
 hr{
   margin-top: 40px;
-  color: grey;
+  color: var(--grey);
 }
 #DistanceTimeTravel{
   display: flex;

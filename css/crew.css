@@ -1,0 +1,123 @@
+:root {
+  --white: #fff;
+  --grey: grey;
+}
+
+body {
+  background-image: url(../starter-code/assets/crew/background-crew-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 1440px;
+  height: 900px;
+}
+header hr {
+  width: 80%;
+  opacity: 25%;
+  margin: 5% 0 0 -2%;
+  color: var(--white);
+  position: relative;
+}
+nav {
+  width: 100vw;
+  height: 16vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+main {
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  width: 40vw;
+  height: 15vh;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  margin: 5% 5% 0 5%;
+}
+.menu {
+  fill: transparent var(--white) 4%;
+  height: 15vh;
+  width: 60vw;
+  backdrop-filter: blur(30px);
+  filter: saturation(25%);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+.menu a {
+  margin: 0 5%;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.menu a:hover {
+  border-bottom: 3px solid var(--white);
+}
+.left {
+  color: var(--white);
+  max-width: 33vw;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+}
+#role {
+  color: var(--grey);
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+h2{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+#numberandname {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.numbercrew {
+  color: rgb(179, 168, 168);
+  margin-right: 7px;
+}
+#bio{
+    font-size: 21px;
+}
+.slider{
+    height: 15px;
+    width: 15px;
+    background-color: var(--grey);
+    border-radius: 50%;
+}
+.active{
+    height: 15px;
+    width: 15px;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+a{
+    margin: 100px 20px 0 0;
+    color: var(--grey);
+    display: inline-block;
+}
+.right {
+  display: flex;
+  text-align: left;
+  max-width: 67vw;
+  max-height: 100vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.right img{
+    height: 712px;
+    width: 568px;
+}
+
