@@ -2,9 +2,8 @@
   --white: #fff;
   --grey: grey;
 }
-
 body {
-  background-image: url(../starter-code/assets/crew/background-crew-desktop.jpg);
+  background-image: url(../starter-code/assets/technology/background-technology-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -61,14 +60,25 @@ main {
 }
 .top {
   display: block;
-  height: 40vh;
+  height: 15vh;
   width: 60vw;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-left: 120px;
 }
 .left {
   display: flex;
   flex-direction: row;
   height: 60vh;
-  width: 60vw;
+  width: 40vw;
+  margin-left: 120px;
+}
+.left p {
+  margin: 0;
+}
+.left h2 {
+  margin: 20px 0;
 }
 .left a {
   display: flex;
@@ -80,17 +90,44 @@ main {
   border-radius: 50%;
   text-decoration: none;
   color: var(--white);
-  border: 1px solid black;
-}
-#lefta,
-#leftdata {
-  flex: 1;
+  border: 1px solid var(--grey);
+  margin: 0 60px 50px 0;
 }
 .right {
   height: 60vh;
   width: 40vw;
 }
+.right img{
+    margin-top: 50px;
+}
 .numbertechnology {
   color: rgb(179, 168, 168);
   margin-right: 7px;
+}
+span {
+  color: var(--white);
+}
+#leftdata p,h2{
+    color: var(--white);
+}
+#leftdata h2{
+    font-size: 46px;
+    text-transform: uppercase;
+}
+#leftdata p{
+    font-size: 18px;
+    line-height: 36px;
+}
+.top p,span{
+    font-size: 30px;
+}
+#lefta a{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#lefta .active{
+    background-color: var(--white);
+    color: black;
 }

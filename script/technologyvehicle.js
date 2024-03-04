@@ -6,23 +6,25 @@ fetch("data.json")
     );
 
     if (launchVehicle) {
-      const main = document.querySelector("main");
+      const Left = document.querySelector(".LeftLeft");
+      const Right = document.querySelector(".Right");
       const launchVehicleSectionTop = document.createElement("section");
       launchVehicleSectionTop.classList.add("top");
 
       launchVehicleSectionTop.innerHTML = `
-      <p class="numbertechnology">01</p>
-      <span>PICK YOUR DESTINATION</span>
+      <p class="numbertechnology">03</p>
+      <span>SPACE LAUNCH 101</span>
       `;
       const launchVehicleSectionLeft = document.createElement("section");
       launchVehicleSectionLeft.classList.add("left");
       launchVehicleSectionLeft.innerHTML = `
       <div id="lefta">
-      <a href="technology-vehicle.html">1</a>
-      <a href="technology-spaceport.html">2</a>
-      <a href="technology-capsule.html">3</a>
+      <a class="active" href="technology-vehicle.html"><p>1</p></a>
+      <a href="technology-spaceport.html"><p>2</p></a>
+      <a href="technology-capsule.html"><p>3</p></a>
       </div>
       <div id="leftdata">
+      <p>THE TERMINOLOGY...</p>
       <h2>${launchVehicle.name}</h2>
       <p>${launchVehicle.description}</p>
       </div>
@@ -33,8 +35,8 @@ fetch("data.json")
       launchVehicleSectionRight.innerHTML = `
       <img src="${launchVehicle.images.portrait}" alt="${launchVehicle.name}">
       `;
-      main.appendChild(launchVehicleSectionTop);
-      main.appendChild(launchVehicleSectionLeft);
-      main.appendChild(launchVehicleSectionRight);
+      Left.appendChild(launchVehicleSectionTop);
+      Left.appendChild(launchVehicleSectionLeft);
+      Right.appendChild(launchVehicleSectionRight);
     }
   });
